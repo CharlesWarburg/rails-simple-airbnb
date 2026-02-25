@@ -25,6 +25,7 @@
             <div class="mt-3">
               <%= link_to "More info", flat_path(flat), class: "btn btn-sm btn-outline-primary" %>
               <%= link_to "Edit flat", edit_flat_path(flat), class: "btn btn-sm btn-outline-secondary ms-1" %>
+              <%= link_to "Remove", flat_path(flat), class: "btn btn-sm btn-outline-danger ms-1", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
             </div>
           </div>
         </div>
