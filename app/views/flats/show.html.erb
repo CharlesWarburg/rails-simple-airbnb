@@ -1,0 +1,15 @@
+<div class="container py-4">
+  <h1 class="mb-2"><%= @flat.name %></h1>
+  <p class="text-secondary mb-4"><%= @flat.address %></p>
+
+  <p><%= @flat.description %></p>
+
+  <div class="d-flex gap-3 text-secondary mt-3">
+    <span><i class="fa-solid fa-user-group me-1"></i> <%= @flat.number_of_guests %> guests</span>
+    <span><i class="fa-solid fa-euro-sign me-1"></i> <%= @flat.price_per_night %> / night</span>
+  </div>
+
+  <div class="mt-4">
+    <%= link_to "Back to flats", flats_path, class: "btn btn-outline-secondary" %>
+  </div>
+</div>
