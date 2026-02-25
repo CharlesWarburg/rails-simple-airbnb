@@ -11,6 +11,7 @@
     <% @flats.each do |flat| %>
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card h-100 shadow-sm border-0">
+          <%= image_tag(flat.picture_url.presence || "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80", class: "card-img-top", alt: flat.name, style: "height: 220px; object-fit: cover;") %>
           <div class="card-body d-flex flex-column">
             <h5 class="card-title mb-1"><%= link_to flat.name, flat_path(flat), class: "text-decoration-none" %></h5>
             <p class="card-subtitle text-secondary mb-3"><%= flat.address %></p>
